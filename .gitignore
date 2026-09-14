@@ -1,0 +1,10 @@
+# Environment
+.env*.local
+
+# Dependencies & build
+node_modules
+.next/
+out/
+.wrangler/
+.DS_Store
+*.stackdump
