@@ -11,8 +11,15 @@ pnpm dev
 
 ## Deploy ke Cloudflare Workers
 
-1. Login: `npx wrangler login`
-2. Preview: `pnpm preview`
-3. Publish: `pnpm deploy`
+`pnpm deploy` **jangan** dipakai — itu perintah built-in pnpm, bukan script.
 
-Build menghasilkan folder `out/`. Wrangler menyajikannya sebagai Workers static assets (`wrangler.jsonc`).
+```bash
+npx wrangler login
+pnpm run cf-deploy
+```
+
+Preview lokal: `pnpm preview`
+
+Build menghasilkan `out/`. Wrangler menyajikannya sebagai Workers static assets (`wrangler.jsonc`).
+
+Di dashboard Cloudflare, **Deploy command** harus `pnpm run cf-deploy` (atau biarkan default `wrangler deploy` — `wrangler.jsonc` sudah menjalankan `pnpm run build`).

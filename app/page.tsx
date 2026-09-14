@@ -109,7 +109,7 @@ export default function Page() {
         <div className="contact-card">
           <span className="card-index">02</span>
           <div><p className="card-label">BUTUH BANTUAN DARURAT?</p><p className="contact-copy">Hubungi admin layanan kami.</p></div>
-          <a className="contact-link" href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" onMouseEnter={() => tone(520)} onClick={() => tone(820)}>WHATSAPP ↗</a>
+          <a className="contact-link" href="https://wa.me/628553333200" target="_blank" rel="noreferrer" onMouseEnter={() => tone(520)} onClick={() => tone(820)}>WHATSAPP ↗</a>
         </div>
       </section>
 

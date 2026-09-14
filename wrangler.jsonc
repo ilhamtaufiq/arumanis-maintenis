@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "arumanis-maintenance",
   "compatibility_date": "2026-09-14",
+  "build": {
+    "command": "pnpm run build"
+  },
   "assets": {
     "directory": "./out",
     "not_found_handling": "single-page-application"
